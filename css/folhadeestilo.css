@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.nav {
+    width: 915px;
+    margin: auto;
+}
+
+.nav {
+    margin-top: -100px;
+    margin-left: 85px;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+/* background-color- muda o fundo, list-style-type- tira aqueles pontinhos safados, padding- para dar espaçamento (aumentar o tamanho do nav e espacar as palavras)*/
+.nav ul {
+    background-color: darkcyan;
+    list-style-type: none;
+    padding: 15px 10px 15px;
+}
+
+/*display:inline- colocar lado a lado as listas, position:relative- para a lista avulsa ficar debaixo do item principal*/
+.nav ul li {
+    display: inline;
+    position: relative;
+}
+
+/* color- cor das letras,text-decoration:none- tira aquele sublinhado safado,display:inline-block- lista separada em bloquinhos, padding- espacamento*/
+.nav ul li a {
+    color: snow;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* pra ter selecao */
+.nav ul li a:hover {
+    background-color: black;
+    color: azure;
+}
+
+/* Aqui vamos fazer a parte do sub menu */
+/* display: none foi para esconder as listas avulsas, left:0 eh para a lista descer debaixo do item principal, position:absolut esta deixando os itens debaixo para nao sobresair os outros, width:150px definiu o tamanho do box da lista avulsa*/
+.nav ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 150px;
+}
+
+/* Aqui ja aparece desce a lista escondida */
+.nav ul li:hover ul {
+    display: block;
+}
+
+.footer {
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 0;
+    width: 1000px;
+    font-size: 11px;
+    padding: 0 15px 0 15px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer li{
+    font-size:10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.logo-branca {
+    position: absolute;
+    margin: -215px 0 0 930px;
+}
+
+.redes-sociais {
+    margin-left: 930px;
+}
