@@ -6,13 +6,13 @@
 }
 
 .nav {
-    margin-top: -100px;
-    margin-left: 85px;
+    margin: -100px 0 80px 85px;
 }
 
 body {
     width: 1000px;
     margin: auto;
+    background-color: snow;
 }
 
 /* background-color- muda o fundo, list-style-type- tira aqueles pontinhos safados, padding- para dar espaçamento (aumentar o tamanho do nav e espacar as palavras)*/
@@ -84,4 +84,21 @@ body {
 
 .redes-sociais {
     margin-left: 930px;
+}
+/* todos os paragrafos vao ser justificados */
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+/* HOME */
+.articlehome{
+    width:450px;
+margin-top: 200px;
+}
+.imghome{
+    margin-top: -200px;
+    float: right;
+
 }
