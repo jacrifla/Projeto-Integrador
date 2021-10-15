@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
+body {
+    width: 1000px;
+    margin: auto;
+    background-color: snow;
+}
+
 .nav {
-    width: 915px;
+    width: 950px;
     margin: auto;
 }
 
 .nav {
     margin: -100px 0 80px 85px;
-}
-
-body {
-    width: 1000px;
-    margin: auto;
-    background-color: snow;
 }
 
 /* background-color- muda o fundo, list-style-type- tira aqueles pontinhos safados, padding- para dar espaçamento (aumentar o tamanho do nav e espacar as palavras)*/
@@ -58,7 +58,6 @@ body {
 
 .footer {
     background-color: darkcyan;
-    position: absolute;
     bottom: 0;
     width: 1000px;
     font-size: 11px;
@@ -79,7 +78,7 @@ body {
 
 .logo-branca {
     position: absolute;
-    margin: -215px 0 0 930px;
+    margin: -195px 0 0 930px;
 }
 
 .redes-sociais {
@@ -92,12 +91,35 @@ p{
 h1{
     text-align: center;
 }
-/* HOME */
+.fontes a{
+color: gray;
+text-decoration: none;
+}
+/*_______HOME_______*/
 .articlehome{
     width:450px;
-margin-top: 200px;
+    margin-top: 200px;
 }
+.articlehome p{
+    padding: 50px;
+}
+
 .imghome{
-    margin-top: -200px;
-    float: right;
+    margin-top: -300px;
+    margin-left: 500px;
+}
+/*_______ESTUDIOS_______*/
+.estudios{
+    width: 650px;
+}
+.img-estudios{
+
+    margin: -1500px 0 0 730px;
+    width:200px;
+
+}
+/*_______TRILHA SONORA_______*/
+.trilha{
+    width: 758px;
+    margin: 0 150px 80px 150px;
 }
