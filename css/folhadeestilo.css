@@ -203,6 +203,42 @@ small a{
     text-align: center;
     white-space: pre;
 }
+.irmao-jorel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.irmao-jorel p{
+    width: 400px;
+}
+.oswaldo{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.oswaldo h1{
+    text-align: center;
+}
+.oswaldo p{
+    align-items: flex-end;
+    width:500px;
+}
+.aside-oswaldo img{
+    align-items: flex-start;
+}
+.turma-monica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+.turma-monica p{
+    width: 900px;
+}
+.turma-monica img{
+    padding: 15px;
+}
 /* _________PROGRAMAS_________ */
 .programas{
     display: flex;
@@ -272,4 +308,98 @@ small a{
 }
 .img-cocorico img{
     padding: 20px;
+}
+/* _______SITIO DO PICAPAU_________ */
+.article-sitio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+}
+.article-sitio p{
+    width: 450px;
+    padding: 20px;
+}
+.sitio1977{
+    display:flex;
+    align-items:flex-start ;
+}
+.sitio1977 section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sitio2001{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+.sitio2001 section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* _________TRILHA SONORA_________ */
+.trilha{
+    width: 820px;
+    margin: auto;
+    height: 630px;
+}
+.trilha img{
+    padding: 5px
+}
+/* _________QUEM SOMOS_________ */
+.quem-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+}
+.quem-somos p{
+    width: 700px;
+}
+.integrantes img{
+    padding: 5px;
+    align-items: center;
+    border-radius: 100%;
+    align-items: center;
+    border-style:dashed;
+    border-color: #731D0A;
+}
+/* _________QUIZ_________ */
+.quiz{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.perguntas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pergunta{
+    width: 260px;
+    height: 175px;
+    align-items: stretch;
+    flex-direction: column;
+    border-color: black;
+}
+/* _________CONTATO_________ */
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.formulario{
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+    border: 1px solid;
+    flex-direction: column;
 }
