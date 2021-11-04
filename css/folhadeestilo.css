@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dosis:wght@700&family=Roboto+Slab:wght@300&display=swap');
 
-html{
+html {
     background-color: #366273;
 }
 
@@ -67,18 +67,21 @@ body {
     width: 1000px;
     color: aliceblue;
     padding: 5px 15px 0 15px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .footer ul {
     list-style-type: none;
     padding: 0;
 }
-.footer li{
-    font-size:10px;
+
+.footer li {
+    font-size: 10px;
 }
-.footer ul li a{
+
+.footer ul li a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .logo-branca {
@@ -91,95 +94,117 @@ body {
     margin-inline-end: 0px;
     margin-block: 0px;
 }
+
 /* todos os paragrafos vao ser justificados */
-p{
+p {
     text-align: justify;
     font-family: 'Roboto Slab', serif;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 30px;
     font-family: 'Bree Serif', serif;
 }
-.footer nav{
+
+.footer nav {
     margin-block: -15px;
 }
-small{
+
+small {
     font-size: 11px;
 }
-small a{
+
+small a {
     font-weight: 700;
-    color:#ffe9d5 ;
+    color: #ffe9d5;
     text-decoration: none;
 }
 
-.fontes a{
+.fontes a {
     text-decoration: none;
     color: lightgray;
 }
+
 /* __________HOME__________ */
 
-.articlehome{
-    display:flex; 
-    justify-content:center; 
-    align-items:center;
+.articlehome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 350px;
 }
-.articlehome p{
+
+.articlehome p {
     padding: 50px;
 }
-.articlehome h1{
+
+.articlehome h1 {
     margin-block-end: -40px;
 }
-.imghome img{
+
+.imghome img {
     padding-right: 50px;
 }
 
 /* _________EMISSORAS_________ */
-.emissoras{
+.emissoras {
     display: flex;
     align-items: flex-start;
     height: 800px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.emissora{
+
+.emissora {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.emissora h2{
+
+.emissora h2 {
     text-align: center;
 }
-.emissora img{
+
+.emissora img {
     justify-content: center;
 }
-.centralizado{
+
+.centralizado {
     text-align: center;
 }
+
 /* _________ESTUDIOS_________ */
-.estudios{
+.estudios {
     padding-left: 20px;
     display: flex;
     width: 650px;
-    height: 3200px;
+    height: 2770px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.img-estudios{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+
+.estudios ul {
+    font-family: 'Roboto Slab', serif;
 }
-.img-estudios img{
+
+.img-estudios {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 582px;
+
+}
+
+.img-estudios img {
     display: flex;
-}   
+    padding: 100px;
+}
 
 /* _________DESENHOS_________ */
-.desenhos{
+.desenhos {
     display: flex;
     align-items: flex-start;
     height: 2750px;
@@ -189,58 +214,102 @@ small a{
     align-content: flex-start;
 }
 
-.desenhos p{
-    width:300px;
+.desenhos p {
+    width: 300px;
 }
-.desenho{
+
+.desenho {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.desenhos h2{
+
+.desenhos h2 {
     text-align: center;
     white-space: pre;
 }
-.irmao-jorel{
+
+/* _________IRMAO JOREL_________ */
+.irmao-jorel {
+    display: flex;
+    align-items: flex-start;
+    height: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.irmao-jorel p {
+    width: 450px;
+    padding: 30px;
+}
+
+.irmao-jorel article{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    flex-wrap: nowrap;
+    align-content: center;
 }
-.irmao-jorel p{
-    width: 400px;
-}
-.oswaldo{
+.irmao-jorel aside{
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-}
-.oswaldo h1{
-    text-align: center;
-}
-.oswaldo p{
-    align-items: flex-end;
-    width:500px;
-}
-.aside-oswaldo img{
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: flex-start;
 }
-.turma-monica{
+
+.irmao-jorel img {
+    padding: 15px;
+}
+
+/* _________OSWALDO_________ */
+
+.oswaldo {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.oswaldo h1 {
+    text-align: center;
+}
+
+.oswaldo p {
+    align-items: flex-end;
+    width: 450px;
+    padding:20px;
+}
+
+.aside-oswaldo img {
+    align-items: flex-start;
+}
+
+/* _________TURMA DA MONICA_________ */
+
+.turma-monica {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 500px;
 }
-.turma-monica p{
+
+.turma-monica p {
     width: 900px;
 }
-.turma-monica img{
+
+.turma-monica img {
     padding: 15px;
 }
+
 /* _________PROGRAMAS_________ */
-.programas{
+.programas {
     display: flex;
     align-items: flex-start;
     height: 1000px;
@@ -249,22 +318,26 @@ small a{
     justify-content: center;
     align-content: flex-start;
 }
-.programas p{
+
+.programas p {
     width: 300px;
 }
-.programa{
+
+.programa {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.programa h2{
+
+.programa h2 {
     text-align: center;
     white-space: pre;
 }
+
 /* _________CASTELO RA TIM BUM_________ */
-.cas-rtb{
+.cas-rtb {
     display: flex;
     align-items: flex-start;
     height: 500px;
@@ -273,22 +346,26 @@ small a{
     justify-content: center;
     align-content: flex-start;
 }
-.cas-rtb P{
+
+.cas-rtb P {
     width: 400px;
     padding-left: 40px;
 }
-.cas-rtb-lado{
+
+.cas-rtb-lado {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.img-castelo img{
-  padding: 5px;
+
+.img-castelo img {
+    padding: 5px;
 }
+
 /* _________COCORICO_________ */
-.cocorico{
+.cocorico {
     display: flex;
     align-items: flex-start;
     height: 500px;
@@ -297,109 +374,169 @@ small a{
     justify-content: center;
     align-content: flex-start;
 }
-.cocorico p{
+
+.cocorico p {
     width: 400px;
     padding-right: 40px;
 }
-.imgs-cocorico{
+
+.imgs-cocorico {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.img-cocorico img{
+
+.img-cocorico img {
     padding: 20px;
 }
+
 /* _______SITIO DO PICAPAU_________ */
-.article-sitio{
+.article-sitio {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 650px;
 }
-.article-sitio p{
+
+.article-sitio p {
     width: 450px;
     padding: 20px;
 }
-.sitio1977{
-    display:flex;
-    align-items:flex-start ;
+
+.sitio1977 {
+    display: flex;
+    align-items: flex-start;
 }
-.sitio1977 section{
+
+.sitio1977 section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.sitio2001{
+
+.sitio2001 {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
 }
-.sitio2001 section{
+
+.sitio2001 section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* _________CURIOSIDADES_________ */
+.curiosidades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.curiosidades section{
+    width:400px;
+}
+.curiosidades article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* _________TRILHA SONORA_________ */
-.trilha{
+.trilha {
     width: 820px;
     margin: auto;
     height: 630px;
 }
-.trilha img{
+
+.trilha img {
     padding: 5px
 }
+
 /* _________QUEM SOMOS_________ */
-.quem-somos{
+.quem-somos {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 550px;
 }
-.quem-somos p{
+
+.quem-somos p {
     width: 700px;
 }
-.integrantes img{
+
+.integrantes img {
     padding: 5px;
     align-items: center;
     border-radius: 100%;
     align-items: center;
-    border-style:dashed;
+    border-style: dashed;
     border-color: #731D0A;
 }
+
 /* _________QUIZ_________ */
-.quiz{
-    height: 900px;
+.quiz {
+    height: 950px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
 }
-.perguntas{
+
+.perguntas {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
-.pergunta{
+
+.pergunta {
     width: 260px;
     height: 175px;
     align-items: stretch;
     flex-direction: column;
     border-color: black;
 }
+
 /* _________CONTATO_________ */
-.contato{
+.contato {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: flex-start;
+    align-content: center;
+    height: 600px;
 }
-.formulario{
+
+.formulario {
     display: flex;
-    align-items: flex-start;
-    width: 300px;
-    border: 1px solid;
+    width: 400px;
+    border: 2px solid #731D0A;
+    border-radius: 15px;
+    align-items: stretch;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #731D0A;
+    border-radius: 4px;
+}
+.formulario textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #731D0A;
+    border-radius: 4px;
 }
