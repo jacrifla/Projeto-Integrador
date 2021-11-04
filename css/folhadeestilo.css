@@ -106,6 +106,10 @@ h1 {
     font-size: 30px;
     font-family: 'Bree Serif', serif;
 }
+h2{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
 
 .footer nav {
     margin-block: -15px;
@@ -367,17 +371,17 @@ small a {
 /* _________COCORICO_________ */
 .cocorico {
     display: flex;
-    align-items: flex-start;
     height: 500px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: flex-end;
 }
 
 .cocorico p {
-    width: 400px;
-    padding-right: 40px;
+    width: 500px;
+    padding-right: 30px;
 }
 
 .imgs-cocorico {
@@ -395,7 +399,7 @@ small a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 650px;
+    height: 770px;
 }
 
 .article-sitio p {
@@ -405,7 +409,7 @@ small a {
 
 .sitio1977 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .sitio1977 section {
@@ -540,3 +544,23 @@ small a {
     border: 2px solid #731D0A;
     border-radius: 4px;
 }
+.formulario button{
+    width:80px;
+    height: 30px;
+}
+/* _________REFERENCIAS BIBLIOGRAFICAS_________ */
+.ref-bibliografica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.ref-bibliografica section{
+    width: 250px;
+}
+.ref-bibliografica a{
+    text-decoration: none;
+}
+
