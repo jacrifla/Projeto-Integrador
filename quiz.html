@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="css/folhadeestilo.css">
 </head>
 
-<body>
+<body id="quiz">
+    <a id="topo">
+        <a href="#topo">
+          <div id="botao_topo">
+              <img src="img/img.jpg" />
+          </div>
+        </a>
+    </a>
     <header>
         <a href="index.html"><img src="img/logo-fmn.png" alt="Logo Fofurinhas Musicas de Narnia"></a>
     </header>
     <nav class="nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="emissoras.html">Emissoras</a></li>
-            <li><a href="estudios.html">Estúdios</a></li>
-            <li><a href="desenhos.html">Desenhos</a>
+            <li><a href="index.html" id="h">Home</a></li>
+            <li><a href="emissoras.html" id="em">Emissoras</a></li>
+            <li><a href="estudios.html" id="es">Estúdios</a></li>
+            <li><a href="desenhos.html" id="d">Desenhos</a>
                 <ul>
-                    <li><a href="irmao-do-jorel.html">Irmão do Jorel</a></li>
-                    <li><a href="oswaldo.html">Oswaldo</a></li>
-                    <li><a href="turma-da-monica.html">Turma da Mônica</a></li>
+                    <li><a href="irmao-do-jorel.html" id="idj">Irmão do Jorel</a></li>
+                    <li><a href="oswaldo.html" id="o">Oswaldo</a></li>
+                    <li><a href="turma-da-monica.html" id="tdm">Turma da Mônica</a></li>
                 </ul>
             </li>
-            <li><a href="programas.html">Programas</a>
+            <li><a href="programas.html" id="p">Programas</a>
                 <ul>
-                    <li><a href="castelo-ra-tim-bum.html">Castelo Rá-Tim-Bum</a></li>
-                    <li><a href="cocorico.html">Cocoricó</a></li>
-                    <li><a href="sitio-do-picapau-amarelo.html">Sitio do Picapau Amarelo</a></li>
+                    <li><a href="castelo-ra-tim-bum.html" id="rtb">Castelo Rá-Tim-Bum</a></li>
+                    <li><a href="cocorico.html" id="cc">Cocoricó</a></li>
+                    <li><a href="sitio-do-picapau-amarelo.html" id="sdpa">Sitio do Picapau Amarelo</a></li>
                 </ul>
             </li>
-            <li><a href="curiosidades.html">Curiosidades</a></li>
-            <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="quem-somos.html">Quem Somos</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="curiosidades.html" id="cs">Curiosidades</a></li>
+            <li><a href="trilha-sonora.html" id="ts">Trilha Sonora</a></li>
+            <li><a href="quiz.html" id="q">Quiz</a></li>
+            <li><a href="quem-somos.html" id="qs">Quem Somos</a></li>
+            <li><a href="contato.html" id="ctt">Contato</a></li>
         </ul>
     </nav>
 
@@ -114,31 +121,41 @@
                 <p><label><input type="radio" name="q12">“Abre te Sésamo”</label></p>
             </fieldset>
         </form>
+        <p><button>Enviar</button></p>
 
     </article>
 
     <footer class="footer">
         <nav>
             <h4>Mapa do site</h4>
+            <section>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="referencias-bibliograficas.html">Referências Bibliográficas</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+            <ul>
                 <li><a href="emissoras.html">Emissoras</a></li>
                 <li><a href="estudios.html">Estúdios</a></li>
+                <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                
+            </ul>
+            <ul>
                 <li><a href="desenhos.html">Desenhos</a></li>
                 <li><a href="irmao-do-jorel.html">Irmão do Jorel</a></li>
                 <li><a href="oswaldo.html">Oswaldo</a></li>
                 <li><a href="turma-da-monica.html">Turma da Mônica</a></li>
+            </ul>
+            <ul>
+                
                 <li><a href="programas.html">Programas</a></li>
                 <li><a href="castelo-ra-tim-bum.html">Castelo Rá-Tim-Bum</a></li>
                 <li><a href="cocorico.html">Cocoricó</a></li>
-                <li><a href="sitio-do-picapau-amarelo.html">Sitio do Picapau Amarelo</a></li>
-                <li><a href="curiosidades.html">Curiosidades</a></li>
-                <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="referencias-bibliograficas.html">Referências Bibliográficas</a></li>
+                <li><a href="sitio-do-picapau-amarelo.html">Sitio do Picapau Amarelo</a></li>    
             </ul>
+          </section>
         </nav>
         <img class="logo-branca" src="img/logo-branca.png" alt="Logo em Branco">
         <figure class="redes-sociais">
@@ -147,7 +164,7 @@
             <img src="img/twitter.png" alt="Logo Twitter">
         </figure>
         <small>&copy; Direitos Reservados à <a href="quem-somos.html"> Fofurinhas Musicais de Narnia</a></small>
-    </footer>
+      </footer>
 </body>
 
 </html>

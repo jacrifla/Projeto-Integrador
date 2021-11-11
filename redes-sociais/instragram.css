@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    background: #fafafa;
+}
+
+/*________HEADER________*/
+header {
+    height: 55px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px grey;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-insta{
+    width:570px
+}
+input{
+    width:214px;
+    height: 27px;
+    border-radius: 2px;
+    background-color:#fafafa; 
+    border-color: #dbdbdb;
+    
+}
+/*________BODY________*/
+div{
+    
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width:1423px;
+}
+/*________ARTICLE________*/
+article{
+    padding-top:20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+article img{
+    padding: 20px
+}
+
+
+
+/*________ASIDE________*/
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    padding-top: 40px
+}
+/*________HEADER________*/
+/*________HEADER________*/
+/*________HEADER________*/
+/*________HEADER________*/

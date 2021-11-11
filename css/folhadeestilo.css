@@ -2,6 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dosis:wght@700&family=Roboto+Slab:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+#botao_topo {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+}
+
+body#home a#h,body#castelo a#crtb, body#cocorico a#cc, body#sitio-do-picapau-amarelo a#sdpa , body#contato a#ctt, body#curiosidades a#cs, body#desenhos a#d, body#emissoras a#em, body#estudios a#es, body#irmao-do-jorel a#idj, body#oswaldo a#o, body#turma-da-monica a#tdm, body#programas a#p, body#quem-somos a#qs, body#quiz a#q, body#trilha-sonora a#ts{
+    cursor: default;
+	background-color: #000;
+    color:white;
+    padding: 5px;
+}
 html {
     background-color: #366273;
 }
@@ -15,22 +31,22 @@ body {
 .nav {
     width: 945px;
     margin: auto;
-    margin: -100px 0 90px 85px;
-    font-family: 'Dosis', sans-serif;
+    margin: -90px 0 60px 85px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 11px;
 }
 
 /* background-color- muda o fundo, list-style-type- tira aqueles pontinhos safados, padding- para dar espaçamento (aumentar o tamanho do nav e espacar as palavras)*/
 .nav ul {
     background-color: #731D0A;
     list-style-type: none;
-    padding: 15px 10px 15px;
+    padding: 15px 10px 11px;
 }
 
 /*display:inline- colocar lado a lado as listas, position:relative- para a lista avulsa ficar debaixo do item principal*/
 .nav ul li {
     display: inline;
     position: relative;
-    padding-left: 5px;
 }
 
 /* color- cor das letras,text-decoration:none- tira aquele sublinhado safado,display:inline-block- lista separada em bloquinhos, padding- espacamento*/
@@ -43,9 +59,12 @@ body {
 
 /* pra ter selecao */
 .nav ul li a:hover {
-    background-color: black;
-    color: azure;
+    background-color: azure;
+    color: #731D0A;
+    padding: 10px;
+    /* border-radius: 100% 100% 0 0; */
 }
+
 
 /* Aqui vamos fazer a parte do sub menu */
 /* display: none foi para esconder as listas avulsas, left:0 eh para a lista descer debaixo do item principal, position:absolut esta deixando os itens debaixo para nao sobresair os outros, width:150px definiu o tamanho do box da lista avulsa*/
@@ -67,16 +86,25 @@ body {
     width: 1000px;
     color: aliceblue;
     padding: 5px 15px 0 15px;
-    font-family: 'Dosis', sans-serif;
+    font-family:sans-serif;
 }
 
-.footer ul {
-    list-style-type: none;
+.footer section {
+    width:700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer ul{
     padding: 0;
+    list-style: none;
 }
 
 .footer li {
-    font-size: 10px;
+    font-size: 11px;
+    padding: 5px;
 }
 
 .footer ul li a {
@@ -86,13 +114,13 @@ body {
 
 .logo-branca {
     position: absolute;
-    margin: -195px 0 0 930px;
+    margin: -145px 0 0 930px;
 }
 
 .redes-sociais {
     margin-left: 930px;
+    margin-bottom: -17px;
     margin-inline-end: 0px;
-    margin-block: 0px;
 }
 
 /* todos os paragrafos vao ser justificados */
@@ -238,16 +266,21 @@ small a {
 /* _________IRMAO JOREL_________ */
 .irmao-jorel {
     display: flex;
-    align-items: flex-start;
-    height: 600px;
-    flex-direction: row;
+    align-items: center;
+    height: 800px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+}
+.irmao-jorel h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .irmao-jorel p {
-    width: 450px;
-    padding: 30px;
+    width: 550px;
+    padding: 20px;
 }
 
 .irmao-jorel article{
@@ -273,12 +306,12 @@ small a {
 
 .oswaldo {
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     height: 600px;
     flex-wrap: wrap;
     align-content: stretch;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .oswaldo h1 {
@@ -286,9 +319,7 @@ small a {
 }
 
 .oswaldo p {
-    align-items: flex-end;
     width: 450px;
-    padding:20px;
 }
 
 .aside-oswaldo img {
@@ -301,7 +332,7 @@ small a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: 600px;
 }
 
 .turma-monica p {
@@ -316,7 +347,7 @@ small a {
 .programas {
     display: flex;
     align-items: flex-start;
-    height: 1000px;
+    height: 1100px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -374,14 +405,13 @@ small a {
     height: 500px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: space-between;
     align-items: flex-end;
 }
 
 .cocorico p {
     width: 500px;
-    padding-right: 30px;
 }
 
 .imgs-cocorico {
@@ -436,18 +466,42 @@ small a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
     justify-content: space-evenly;
     align-items: flex-start;
+    align-content: space-around;
 }
 .curiosidades section{
     width:400px;
+
 }
 .curiosidades article{
     display: flex;
     flex-wrap: wrap;
 }
-
+.curiosidades ol{
+    font-family: 'Roboto Slab', serif;
+}
+.castelo h1{
+    background-color: rgb(184, 90, 184);
+}
+.coco h1{
+    background-color: royalblue;
+}
+.lua h1{
+    background-color: steelblue;
+}
+.sitio h1{
+    background-color: palegreen;
+}
+.irmao h1{
+    background-color: orangered;
+}
+.glub h1{
+    background-color: peru;
+}
+.maluquinho h1{
+    background-color: skyblue;
+}
 /* _________TRILHA SONORA_________ */
 .trilha {
     width: 820px;
@@ -488,6 +542,9 @@ small a {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
+}
+.quiz button:hover {
+    background-color: #dfdfdf;
 }
 
 .perguntas {
@@ -547,6 +604,9 @@ small a {
 .formulario button{
     width:80px;
     height: 30px;
+}
+.formulario button:hover {
+    background-color: #dfdfdf;
 }
 /* _________REFERENCIAS BIBLIOGRAFICAS_________ */
 .ref-bibliografica{
