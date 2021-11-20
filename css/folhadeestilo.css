@@ -4,21 +4,24 @@
 
 
 html {
-    background-color: #366273;
+    background-color: #fddfc2;
 }
 
 body {
     width: 1030px;
     margin: auto;
     background-color: #ffe9d5;
+    box-shadow: 0px 0px 3px black;
 }
 
 .nav {
     width: 945px;
     margin: auto;
     margin: -90px 0 60px 85px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 11px;
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 /* background-color- muda o fundo, list-style-type- tira aqueles pontinhos safados, padding- para dar espaçamento (aumentar o tamanho do nav e espacar as palavras)*/
@@ -44,7 +47,6 @@ body {
 
 /* pra ter selecao */
 .nav ul li a:hover {
-
     color: #366273;
     padding: 10px;
     /* border-radius: 100% 100% 0 0; */
@@ -73,6 +75,7 @@ body {
     padding: 5px 15px 0 15px;
     font-family:sans-serif;
 }
+
 
 .footer div {
     width:700px;
@@ -118,6 +121,9 @@ h1 {
     text-align: center;
     font-size: 30px;
     font-family: 'Bree Serif', serif;
+    color: #731D0A;
+    text-transform: uppercase;
+    
 }
 h2{
     font-family: 'Bree Serif', serif;
@@ -154,7 +160,6 @@ small a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 350px;
 }
 
 .articlehome p {
@@ -168,6 +173,7 @@ small a {
 .imghome img {
     padding-right: 50px;
 }
+
 
 /* _________EMISSORAS_________ */
 .emissoras div{
@@ -241,11 +247,10 @@ small a {
     white-space: pre;
 }
 
-/* _________IRMAO JOREL_________ */
+/* _________IRMÃO JOREL_________ */
 .irmao-jorel {
     display: flex;
     align-items: center;
-    height: 800px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
@@ -311,7 +316,7 @@ small a {
 }
 
 .turma-monica img {
-    padding: 15px;
+    padding: 17px;
 }
 
 /* _________PROGRAMAS_________ */
@@ -443,7 +448,13 @@ small a {
 }
 .curiosidades section{
     width:400px;
-
+}
+.curiosidades ol{
+    text-align: justify;
+    padding-left: 15px;
+}
+.curiosidades li{
+    padding-bottom: 15px;
 }
 .curiosidades article{
     display: flex;
@@ -452,25 +463,31 @@ small a {
 .curiosidades ol{
     font-family: 'Roboto Slab', serif;
 }
-.castelo h1{
+.curiosidades h2{
+    color: #000;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.castelo h2{
     background-color: rgb(184, 90, 184);
 }
-.coco h1{
-    background-color: royalblue;
+.coco h2{
+    background-color: rgb(235, 211, 0);
 }
-.lua h1{
-    background-color: steelblue;
+.lua h2{
+    background-color: darkorange;
 }
-.sitio h1{
+.sitio h2{
     background-color: palegreen;
 }
-.irmao h1{
+.irmao h2{
     background-color: orangered;
 }
-.glub h1{
+.glub h2{
     background-color: peru;
 }
-.maluquinho h1{
+.maluquinho h2{
     background-color: skyblue;
 }
 /* _________TRILHA SONORA_________ */
@@ -481,7 +498,8 @@ small a {
 }
 
 .trilha img {
-    padding: 5px
+    padding: 5px;
+    
 }
 
 /* _________QUEM SOMOS_________ */
@@ -515,7 +533,8 @@ small a {
     align-items: flex-start;
 }
 .quiz button:hover {
-    background-color: #dfdfdf;
+    background-color: #d6d6d6;
+    border-radius: 3px;
 }
 
 .perguntas {
@@ -563,6 +582,10 @@ small a {
     box-sizing: border-box;
     border: 2px solid #731D0A;
     border-radius: 4px;
+    font-family: 'Roboto Slab'; 
+}
+.formulario text{
+    font-family: 'Roboto Slab';
 }
 .formulario textarea{
     width: 100%;
@@ -571,13 +594,15 @@ small a {
     box-sizing: border-box;
     border: 2px solid #731D0A;
     border-radius: 4px;
+    font-family: 'Roboto Slab';
 }
 .formulario button{
     width:80px;
     height: 30px;
 }
 .formulario button:hover {
-    background-color: #dfdfdf;
+    background-color: #e2e2e2;
+    border-radius: 3px;
 }
 /* _________REFERENCIAS BIBLIOGRAFICAS_________ */
 .ref-bibliografica{
