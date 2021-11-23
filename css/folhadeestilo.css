@@ -47,9 +47,8 @@ body {
 
 /* pra ter selecao */
 .nav ul li a:hover {
-    color: #366273;
-    padding: 10px;
-    /* border-radius: 100% 100% 0 0; */
+    color: #fff;
+    font-weight: bolder;
 }
 
 
@@ -73,7 +72,7 @@ body {
     width: 1000px;
     color: aliceblue;
     padding: 5px 15px 0 15px;
-    font-family:sans-serif;
+    font-family:'Roboto Slab';
 }
 
 
@@ -85,7 +84,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
 }
-footer ul{
+.footer ul{
     padding: 0;
     list-style: none;
 }
@@ -111,6 +110,25 @@ footer ul{
     margin-inline-end: 0px;
 }
 
+.footer nav {
+    margin-block: -15px;
+}
+
+small {
+    font-size: 11px;
+}
+
+small a {
+    font-weight: 700;
+    color: #ffe9d5;
+    text-decoration: none;
+}
+/* __________FONTES DE SITE__________ */
+.fontes a {
+    text-decoration: none;
+    color: lightgray;
+}
+/* __________OUTRAS MUDANÇAS__________ */
 /* todos os paragrafos vao ser justificados */
 p {
     text-align: justify;
@@ -133,25 +151,6 @@ h3{
     font-family: 'Bree Serif', serif;
     font-size: 15px;
     padding-right: 5px;
-}
-
-.footer nav {
-    margin-block: -15px;
-}
-
-small {
-    font-size: 11px;
-}
-
-small a {
-    font-weight: 700;
-    color: #ffe9d5;
-    text-decoration: none;
-}
-
-.fontes a {
-    text-decoration: none;
-    color: lightgray;
 }
 
 /* __________HOME__________ */
@@ -260,6 +259,7 @@ small a {
 .irmao-jorel p {
     width: 550px;
     padding: 20px;
+    white-space: pre-wrap;
 }
 
 .irmao-jorel section{
@@ -296,6 +296,7 @@ small a {
 
 .oswaldo p {
     width: 450px;
+    white-space: pre-wrap;
 }
 
 .aside-oswaldo img {
@@ -531,6 +532,7 @@ small a {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
+    height: 1000px;
 }
 .quiz button:hover {
     background-color: #d6d6d6;
