@@ -123,11 +123,56 @@ small a {
     color: #ffe9d5;
     text-decoration: none;
 }
-/* __________FONTES DE SITE__________ */
+/* __________FONTES DE SITES__________ */
 .fontes a {
     text-decoration: none;
-    color: lightgray;
+    color: gray;
+    padding-left: 15px;
+    font-family: 'Roboto Slab';
 }
+
+.fontes {
+    padding-left: 50px;
+    margin-block-start: -12px;
+    color: gray;
+    padding-bottom: 10px;
+}
+/* __________TABELA__________ */
+th {
+    font-size: 20px;
+    background-color: #8A3106;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+td {
+    background-color: #E5B55F;
+}
+
+table,
+tr,
+td,
+th {
+    font-size: 18px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Roboto Slab';
+}
+
+th {
+    width: 225px;
+}
+
+table {
+    margin: 65px;
+    width: 900px;
+}
+caption{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
 /* __________OUTRAS MUDANÇAS__________ */
 /* todos os paragrafos vao ser justificados */
 p {
@@ -244,6 +289,25 @@ h3{
 .desenhos h2 {
     text-align: center;
     white-space: pre;
+}
+.article-programacao {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article-programacao a{
+    text-decoration: none;
+    color: #731D0A;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    padding: 15px;
+}
+.article-programacao a:hover{
+    color: #fddfc2;
+    background-color: #731D0A;
 }
 
 /* _________IRMÃO JOREL_________ */
