@@ -127,49 +127,16 @@ small a {
 .fontes a {
     text-decoration: none;
     color: gray;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     font-family: 'Roboto Slab';
 }
 
 .fontes {
+    margin: auto;
+
     padding-left: 50px;
     margin-block-start: -12px;
     color: gray;
-    padding-bottom: 10px;
-}
-/* __________TABELA__________ */
-th {
-    font-size: 20px;
-    background-color: #8A3106;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-td {
-    background-color: #E5B55F;
-}
-
-table,
-tr,
-td,
-th {
-    font-size: 18px;
-    border: solid 1px black;
-    border-collapse: collapse;
-    text-align: center;
-    font-family: 'Roboto Slab';
-}
-
-th {
-    width: 225px;
-}
-
-table {
-    margin: 65px;
-    width: 900px;
-}
-caption{
-    font-weight: bold;
     padding-bottom: 10px;
 }
 
@@ -290,6 +257,7 @@ h3{
     text-align: center;
     white-space: pre;
 }
+/* _____BOTÃO PROGRAMAÇÃO_______ */
 .article-programacao {
     display: flex;
     text-decoration: none;
@@ -309,7 +277,49 @@ h3{
     color: #fddfc2;
     background-color: #731D0A;
 }
+/* __________TABELA__________ */
+th {
+    font-size: 20px;
+    background-color: #8A3106;
+    text-transform: uppercase;
+    color: #fff;
+}
 
+td {
+    background-color: #E5B55F;
+}
+
+table,
+tr,
+td,
+th {
+    font-size: 18px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Roboto Slab';
+}
+
+th {
+    width: 225px;
+}
+
+table {
+    margin: 65px;
+    width: 900px;
+}
+caption{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.programacao{
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 /* _________IRMÃO JOREL_________ */
 .irmao-jorel {
     display: flex;
@@ -554,6 +564,9 @@ h3{
 }
 .maluquinho h2{
     background-color: skyblue;
+}
+.monica h2{
+    background-color: red;
 }
 /* _________TRILHA SONORA_________ */
 .trilha {
