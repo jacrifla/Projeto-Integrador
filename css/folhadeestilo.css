@@ -687,13 +687,13 @@ caption{
 .ref-bibliografica{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
 }
-.ref-bibliografica section{
-    width: 250px;
+.ref-bibliografica div{
+    width: 400px;
 }
 .ref-bibliografica a{
     text-decoration: none;
