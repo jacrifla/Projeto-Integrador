@@ -3,69 +3,160 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="css/folhadeestilo.css">
 </head>
 
 <body>
-    <header>
-       <a href="index.html"><img src="img/logo-fmn.png" alt="Logo Fofurinhas Musicas de Narnia"></a>
-    </header>
     <nav class="nav">
+        <a href="index.html"><img src="img/logo-fmn.png" alt="Logo Fofurinhas Musicas de Narnia"></a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="emissoras.html">Emissoras</a></li>
-            <li><a href="estudios.html">Estúdios</a></li>
-            <li><a href="desenhos.html">Desenhos</a>
+            <li><a href="index.html" id="h">Home</a></li>
+            <li><a href="emissoras.html" id="em">Emissoras</a></li>
+            <li><a href="estudios.html" id="es">Estúdios</a></li>
+            <li><a href="desenhos.html" id="d">Desenhos</a>
                 <ul>
+                    <li><a href="irmao-do-jorel.html" id="idj">Irmão do Jorel</a></li>
+                    <li><a href="oswaldo.html" id="o">Oswaldo</a></li>
+                    <li><a href="turma-da-monica.html" id="tdm">Turma da Mônica</a></li>
+                </ul>
+            </li>
+            <li><a href="programas.html" id="p">Programas</a>
+                <ul>
+                    <li><a href="castelo-ra-tim-bum.html" id="rtb">Castelo Rá-Tim-Bum</a></li>
+                    <li><a href="cocorico.html" id="cc">Cocoricó</a></li>
+                    <li><a href="sitio-do-picapau-amarelo.html" id="sdpa">Sitio do Picapau Amarelo</a></li>
+                </ul>
+            </li>
+            <li><a href="curiosidades.html" id="cs">Curiosidades</a></li>
+            <li><a href="trilha-sonora.html" id="ts">Trilha Sonora</a></li>
+            <li><a href="quiz.html" id="q">Quiz</a></li>
+            <li><a href="quem-somos.html" id="qs">Quem Somos</a></li>
+            <li><a href="contato.html" id="ctt">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="body">
+        <article class="quiz">
+            <h1>Vamos ver quanto você conhece sobre os programas da nossa infância </h1>
+            <form class="perguntas">
+                <fieldset class="pergunta">
+                    <legend>Qual o ano de estreia do Mundo da lua?</legend>
+                    <p><label><input type="radio" name=q1>1990</label></p>
+                    <p><label><input type="radio" name=q1>1991</label></p>
+                    <p><label><input type="radio" name=q1>1994</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Luciano Amaral fez quais personagens?</legend>
+                    <p><label><input type="radio" name="q2">Lucas e Pedro</label></p>
+                    <p><label><input type="radio" name="q2">Abel e Caim</label></p>
+                    <p><label><input type="radio" name="q2">Tico e Teco</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Quantos anos o ator do Lucas Silva e Silva tinha na época da série?</legend>
+                    <p><label><input type="radio" name="q3">8</label></p>
+                    <p><label><input type="radio" name="q3">9</label></p>
+                    <p><label><input type="radio" name="q3">10</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Qual o nome do ator que interpretava o Dr. Victor?</legend>
+                    <p><label><input type="radio" name="q4">Sergio Memarti</label></p>
+                    <p><label><input type="radio" name="q4">Sérgio Mamberti</label></p>
+                    <p><label><input type="radio" name="q4">Serjio Mamba</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Qual o nome do Autor de sítio do picapau amarelo?</legend>
+                    <p><label><input type="radio" name="q5">Monteiro Lobato</label></p>
+                    <p><label><input type="radio" name="q5">Ana Maria Machado</label></p>
+                    <p><label><input type="radio" name="q5">Pedro Bandeira</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Em que ano estreia Gub Glub?</legend>
+                    <p><label><input type="radio" name="q6">1990</label></p>
+                    <p><label><input type="radio" name="q6">1999</label></p>
+                    <p><label><input type="radio" name="q6">1991</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Quantos anos o Júlio do cocorico tinha?</legend>
+                    <p><label><input type="radio" name="q7">10</label></p>
+                    <p><label><input type="radio" name="q7">8</label></p>
+                    <p><label><input type="radio" name="q7">6</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Qual o nome da melhor amiga do irmão de Jorel?</legend>
+                    <p><label><input type="radio" name="q8">Lora</label></p>
+                    <p><label><input type="radio" name="q8">Carla</label></p>
+                    <p><label><input type="radio" name="q8">Lara</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Qual é o personagem principal do irmão de Jorel?</legend>
+                    <p><label><input type="radio" name="q9">Vovó juju</label></p>
+                    <p><label><input type="radio" name="q9">Jorel</label></p>
+                    <p><label><input type="radio" name="q9">irmão do Jorel</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Qual é o nome do valentão da sala do irmão de Jorel?</legend>
+                    <p><label><input type="radio" name="q10">Tosh</label></p>
+                    <p><label><input type="radio" name="q10">Billy Doidão</label></p>
+                    <p><label><input type="radio" name="q10">Samantha</label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>Qual o nome do pato da vovó juju?</legend>
+                    <p><label><input type="radio" name="q11">Reginaldo</label></p>
+                    <p><label><input type="radio" name="q11">Gesonel</label></p>
+                    <p><label><input type="radio" name="q11">Syd Vinicius  </label></p>
+                </fieldset>
+                <fieldset class="pergunta">
+                    <legend>O que o porteiro do Castelo Rá-Tim-Bum fala?</legend>
+                    <p><label><input type="radio" name="q12">“Klift Kloft Still, a porta se abriu!”</label></p>
+                    <p><label><input type="radio" name="q12">“Open door, porta aberta!”</label></p>
+                    <p><label><input type="radio" name="q12">“Abre te Sésamo”</label></p>
+                </fieldset>
+            </form>
+            <p><button>Enviar</button></p>
+    
+        </article>
+    
+        <footer class="footer">
+            <nav>
+                <h4>Mapa do site</h4>
+                <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="referencias-bibliograficas.html">Referências Bibliográficas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+                <ul>
+                    <li><a href="emissoras.html">Emissoras</a></li>
+                    <li><a href="estudios.html">Estúdios</a></li>
+                    <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    
+                </ul>
+                <ul>
+                    <li><a href="desenhos.html">Desenhos</a></li>
                     <li><a href="irmao-do-jorel.html">Irmão do Jorel</a></li>
                     <li><a href="oswaldo.html">Oswaldo</a></li>
                     <li><a href="turma-da-monica.html">Turma da Mônica</a></li>
                 </ul>
-            </li>
-            <li><a href="programas.html">Programas</a>
                 <ul>
+                    <li><a href="programas.html">Programas</a></li>
                     <li><a href="castelo-ra-tim-bum.html">Castelo Rá-Tim-Bum</a></li>
                     <li><a href="cocorico.html">Cocoricó</a></li>
-                    <li><a href="sitio-do-picapau-amarelo.html">Sitio do Picapau Amarelo</a></li>
+                    <li><a href="sitio-do-picapau-amarelo.html">Sitio do Picapau Amarelo</a></li>    
                 </ul>
-            </li>
-            <li><a href="curiosidades.html">Curiosidades</a></li>
-            <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="quem-somos.html">Quem Somos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-
-    <footer class="footer">
-        <h4>Mapa do site</h4>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="emissoras.html">Emissoras</a></li>
-            <li><a href="estudios.html">Estúdios</a></li>
-            <li><a href="desenhos.html">Desenhos</a></li>
-            <li><a href="irmao-do-jorel.html">Irmão do Jorel</a></li>
-            <li><a href="oswaldo.html">Oswaldo</a></li>
-            <li><a href="turma-da-monica.html">Turma da Mônica</a></li>
-            <li><a href="programas.html">Programas</a></li>
-            <li><a href="castelo-ra-tim-bum.html">Castelo Rá-Tim-Bum</a></li>
-            <li><a href="cocorico.html">Cocoricó</a></li>
-            <li><a href="sitio-do-picapau-amarelo.html">Sitio do Picapau Amarelo</a></li>
-            <li><a href="curiosidades.html">Curiosidades</a></li>
-            <li><a href="trilha-sonora.html">Trilha Sonora</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-            <li><a href="quem-somos.html">Quem Somos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <img class="logo-branca" src="img/logo-branca.png" alt="Logo em Branco">
-        <section class="redes-sociais">
-            <img src="img/facebook.png" alt="Logo Facebook">
-            <img src="img/instagram.png" alt="Logo Instagram">
-            <img src="img/twitter.png" alt="Logo Twitter">
-        </section>
-        <small>&copy Direitos Reservados à Fofurinhas Musicais de Narnia</small>
-    </footer>
+              </div>
+            </nav>
+            <img class="logo-branca" src="img/logo-branca.png" alt="Logo em Branco">
+            <figure class="redes-sociais">
+                <img src="img/facebook.png" alt="Logo Facebook">
+                <img src="img/instagram.png" alt="Logo Instagram">
+                <img src="img/twitter.png" alt="Logo Twitter">
+            </figure>
+            <small>&copy; Direitos Reservados à <a href="quem-somos.html"> Fofurinhas Musicais de Narnia</a></small>
+        </footer>
+    </div>
 </body>
 
 </html>

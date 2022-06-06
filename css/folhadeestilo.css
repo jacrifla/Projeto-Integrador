@@ -1,25 +1,36 @@
 @charset "UTF-8";
 
-.nav {
-    width: 915px;
-    margin: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mochiy+Pop+P+One&family=Roboto+Slab:wght@300&display=swap');
 
-.nav {
-    margin: -100px 0 80px 85px;
+
+html {
+    background-color: #fddfc2;
 }
 
 body {
-    width: 1000px;
+    width: 1030px;
     margin: auto;
-    background-color: snow;
+    background-color: #ffe9d5;
+    box-shadow: 0px 0px 3px black;
+}
+.body{
+    padding-top: 80px;
+}
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Slab';
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 /* background-color- muda o fundo, list-style-type- tira aqueles pontinhos safados, padding- para dar espaçamento (aumentar o tamanho do nav e espacar as palavras)*/
 .nav ul {
-    background-color: darkcyan;
+    background-color: #731D0A;
     list-style-type: none;
-    padding: 15px 10px 15px;
+    padding: 10px;
 }
 
 /*display:inline- colocar lado a lado as listas, position:relative- para a lista avulsa ficar debaixo do item principal*/
@@ -30,7 +41,7 @@ body {
 
 /* color- cor das letras,text-decoration:none- tira aquele sublinhado safado,display:inline-block- lista separada em bloquinhos, padding- espacamento*/
 .nav ul li a {
-    color: snow;
+    color: rgb(255, 250, 250);
     text-decoration: none;
     display: inline-block;
     padding: 10px;
@@ -38,9 +49,10 @@ body {
 
 /* pra ter selecao */
 .nav ul li a:hover {
-    background-color: black;
-    color: azure;
+    color: #fff;
+    font-weight: bolder;
 }
+
 
 /* Aqui vamos fazer a parte do sub menu */
 /* display: none foi para esconder as listas avulsas, left:0 eh para a lista descer debaixo do item principal, position:absolut esta deixando os itens debaixo para nao sobresair os outros, width:150px definiu o tamanho do box da lista avulsa*/
@@ -56,48 +68,634 @@ body {
     display: block;
 }
 
+/*muda a cor do footer, o tamanho dele, o tamanho da letra e o espacamento*/
 .footer {
-    background-color: darkcyan;
-    position: absolute;
-    bottom: 0;
+    background-color: #731D0A;
     width: 1000px;
-    font-size: 11px;
-    padding: 0 15px 0 15px;
+    color: aliceblue;
+    padding: 5px 15px 0 15px;
+    font-family:'Roboto Slab';
 }
 
-.footer ul {
-    list-style-type: none;
+
+.footer div {
+    width:700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer ul{
     padding: 0;
+    list-style: none;
 }
-.footer li{
-    font-size:10px;
+
+.footer li {
+    font-size: 11px;
+    padding: 5px;
 }
-.footer ul li a{
+
+.footer ul li a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
 }
 
 .logo-branca {
     position: absolute;
-    margin: -215px 0 0 930px;
+    margin: -145px 0 0 930px;
 }
 
 .redes-sociais {
     margin-left: 930px;
+    margin-bottom: -17px;
+    margin-inline-end: 0px;
 }
+
+.footer nav {
+    margin-block: -15px;
+}
+
+small {
+    font-size: 11px;
+}
+
+small a {
+    font-weight: 700;
+    color: #ffe9d5;
+    text-decoration: none;
+}
+/* __________FONTES DE SITES__________ */
+.fontes a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    font-family: 'Roboto Slab';
+}
+
+.fontes {
+    margin-block-start: -12px;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+/* __________OUTRAS MUDANÇAS__________ */
 /* todos os paragrafos vao ser justificados */
-p{
+p {
     text-align: justify;
+    font-family: 'Roboto Slab', serif;
 }
-h1{
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+    color: #731D0A;
+    text-transform: uppercase;
+    
+}
+h2{
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+h3{
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+/* __________HOME__________ */
+
+.articlehome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.articlehome p {
+    padding: 50px;
+}
+
+.articlehome h1 {
+    margin-block-end: -40px;
+}
+
+.imghome img {
+    padding-right: 50px;
+}
+
+
+/* _________EMISSORAS_________ */
+.emissoras div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.emissoras section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+}
+
+.emissora h2 {
     text-align: center;
 }
-/* HOME */
-.articlehome{
-    width:450px;
-margin-top: 200px;
+
+.centralizado {
+    text-align: center;
 }
-.imghome{
-    margin-top: -200px;
-    float: right;
+
+/* _________ESTUDIOS_________ */
+.estudios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
 }
+.estudios ul {
+    font-family: 'Roboto Slab', serif;
+}
+.estudios div{
+    display: flex;
+    align-items: center;
+}
+.estudios img{
+    padding-left: 20px;
+}
+
+/* _________DESENHOS_________ */
+.desenhos {
+    display: flex;
+    align-items: flex-start;
+    height: 2750px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.desenhos p {
+    width: 300px;
+}
+
+.desenho {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desenhos h2 {
+    text-align: center;
+    white-space: pre;
+}
+/* _____BOTÃO PROGRAMAÇÃO_______ */
+.article-programacao {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article-programacao a{
+    text-decoration: none;
+    color: #731D0A;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    padding: 15px;
+}
+.article-programacao a:hover{
+    color: #fddfc2;
+    background-color: #731D0A;
+}
+/* __________TABELA__________ */
+th {
+    font-size: 20px;
+    background-color: #8A3106;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+td {
+    background-color: #E5B55F;
+}
+
+table,
+tr,
+td,
+th {
+    font-size: 18px;
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Roboto Slab';
+}
+
+th {
+    width: 225px;
+}
+
+table {
+    margin: 65px;
+    width: 900px;
+}
+caption{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.programacao{
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/* _________IRMÃO JOREL_________ */
+.irmao-jorel {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.irmao-jorel p {
+    width: 550px;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+.irmao-jorel section{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+}
+.irmao-jorel div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center
+}
+.irmao-jorel img{
+    padding: 15px;
+}
+
+/* _________OSWALDO_________ */
+
+.oswaldo {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.oswaldo h1 {
+    text-align: center;
+}
+
+.oswaldo p {
+    width: 450px;
+    white-space: pre-wrap;
+}
+
+.aside-oswaldo img {
+    align-items: flex-start;
+}
+
+/* _________TURMA DA MONICA_________ */
+
+.turma-monica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.turma-monica p {
+    width: 900px;
+}
+
+.turma-monica img {
+    padding: 17px;
+}
+
+/* _________PROGRAMAS_________ */
+.programas {
+    display: flex;
+    align-items: flex-start;
+    height: 1100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.programas p {
+    width: 300px;
+}
+
+.programa {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programa h2 {
+    text-align: center;
+    white-space: pre;
+}
+
+/* _________CASTELO RA TIM BUM_________ */
+.cas-rtb {
+    display: flex;
+    align-items: flex-start;
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.cas-rtb P {
+    width: 400px;
+    padding-left: 40px;
+}
+
+.cas-rtb-lado {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-castelo img {
+    padding: 5px;
+}
+
+/* _________COCORICO_________ */
+.cocorico {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.cocorico p {
+    width: 500px;
+}
+
+.imgs-cocorico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-cocorico img {
+    padding: 20px;
+}
+
+/* _______SITIO DO PICAPAU_________ */
+.article-sitio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 770px;
+}
+
+.article-sitio p {
+    width: 450px;
+    padding: 20px;
+}
+
+.sitio1977 {
+    display: flex;
+    align-items: center;
+}
+
+.sitio1977 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sitio2001 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+
+.sitio2001 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* _________CURIOSIDADES_________ */
+.curiosidades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+}
+.curiosidades section{
+    width:400px;
+}
+.curiosidades ol{
+    text-align: justify;
+    padding-left: 15px;
+}
+.curiosidades li{
+    padding-bottom: 15px;
+}
+.curiosidades article{
+    display: flex;
+    flex-wrap: wrap;
+}
+.curiosidades ol{
+    font-family: 'Roboto Slab', serif;
+}
+.curiosidades h2{
+    color: #000;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.castelo h2{
+    background-color: rgb(184, 90, 184);
+}
+.coco h2{
+    background-color: rgb(235, 211, 0);
+}
+.lua h2{
+    background-color: darkorange;
+}
+.sitio h2{
+    background-color: palegreen;
+}
+.irmao h2{
+    background-color: orangered;
+}
+.glub h2{
+    background-color: peru;
+}
+.maluquinho h2{
+    background-color: skyblue;
+}
+.monica h2{
+    background-color: red;
+}
+/* _________TRILHA SONORA_________ */
+.trilha {
+    width: 820px;
+    margin: auto;
+    height: 630px;
+}
+
+.trilha img {
+    padding: 5px;
+    
+}
+
+/* _________QUEM SOMOS_________ */
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+}
+
+.quem-somos p {
+    width: 700px;
+}
+
+.integrantes img {
+    padding: 5px;
+    align-items: center;
+    border-radius: 100%;
+    align-items: center;
+    border-style: dashed;
+    border-color: #731D0A;
+}
+
+/* _________QUIZ_________ */
+.quiz {
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 1000px;
+}
+.quiz button:hover {
+    background-color: #d6d6d6;
+    border-radius: 3px;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pergunta {
+    width: 260px;
+    height: 175px;
+    align-items: stretch;
+    flex-direction: column;
+    border-color: black;
+}
+
+/* _________CONTATO_________ */
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    height: 600px;
+}
+
+.formulario {
+    display: flex;
+    width: 400px;
+    border: 2px solid #731D0A;
+    border-radius: 15px;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #731D0A;
+    border-radius: 4px;
+    font-family: 'Roboto Slab'; 
+}
+.formulario text{
+    font-family: 'Roboto Slab';
+}
+.formulario textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #731D0A;
+    border-radius: 4px;
+    font-family: 'Roboto Slab';
+}
+.formulario button{
+    width:80px;
+    height: 30px;
+}
+.formulario button:hover {
+    background-color: #e2e2e2;
+    border-radius: 3px;
+}
+/* _________REFERENCIAS BIBLIOGRAFICAS_________ */
+.ref-bibliografica{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.ref-bibliografica div{
+    width: 400px;
+}
+.ref-bibliografica a{
+    text-decoration: none;
+}
+
